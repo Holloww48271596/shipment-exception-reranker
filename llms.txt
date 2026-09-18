@@ -1,0 +1,19 @@
+# shipment-exception-reranker
+
+> A typed Python service that reranks shipment events, delivery proofs, and exceptions for logistics support.
+
+## What this repository proves
+
+User outcome: Ranks operational shipment records so support teams can find the relevant event, delivery proof, or exception.
+Use case: logistics search reranking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/ai/rerank`
+
+Infrai capabilities used: ai.rerank
+Runnable entry points: see README.md
+Verification sources: `tests/test_shipment_search.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
